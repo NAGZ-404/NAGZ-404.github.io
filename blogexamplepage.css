@@ -1,0 +1,187 @@
+
+/* CSS Styling for main article */
+article{
+  float: left;
+  margin: 8.75em 7.5%;
+  /* margin-left: 100px;
+  margin-right: auto;
+  margin-top: 140px; */
+  width: 50%;
+  background-color: #d1d1d1;
+  padding: 1.5%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+article h2{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+article h3{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* CSS Styling for figure, figcaption and the place-holder image*/
+
+figure{
+  display: inline-block;
+}
+
+figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.artimg{
+  float: right;
+}
+
+/* CSS Styling for the date shown at the top of the blog post */
+
+.date{
+  float:right;
+  margin-top: 0;
+  position: relative;
+  text-align: right;
+
+}
+
+.date p{
+  font-size: 0.9em;
+}
+
+.date i{
+  font-size: 1.2em;
+  vertical-align: sub;
+}
+
+/* CSS Styling for lists */
+
+ul{
+  list-style: none;
+  margin-left: 2px;
+}
+
+ul li{
+  padding: 2px;
+}
+
+/* CSS Styling for everything on the right hand side of the page */
+
+.RHS{
+  float: right;
+  margin-right: 90px;
+}
+
+/* CSS Styling for the 'Add Post' Button */
+
+.add{
+  /* float: right; */
+  margin-top: 200px;
+}
+
+.postbutton{
+  box-shadow: 5px 10px 18px black;
+  border: none;
+  border-radius: 8px;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ef233cff;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-size: 1.5em;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.postbutton:hover{
+  background-color: #2d3047ff;
+  color: #ef233cff;
+}
+
+/* CSS Styling for the list of entries */
+
+.entries{
+  /* float: right; */
+  margin-top: 20px;
+  margin-left: -70px;
+  width: 150%;
+
+  background-color: #d1d1d1;
+  padding: 9%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+.entries h2{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* CSS Styling for 'a' or hyperlinks, list items and the FontAwesome icons. Month is also made bold*/
+
+a{
+  text-decoration: none;
+}
+
+a li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a li:hover{
+  color: #e9f1f7ff;
+}
+
+li i{
+  padding: 10px;
+}
+
+.month{
+  font-weight: bold;
+}
+
+ul .nestedlist{
+  margin-left: 20px;
+}
+
+/* Animation for the fade-in effect of the page loading */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Footer distance from content */
+
+footer{
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+}
