@@ -1,0 +1,112 @@
+/* CSS Styling for main article */
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.75em;
+  width: 90%;
+  background-color: #d1d1d1;
+  padding: 1.5%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+article h2{
+  font-weight: bold;
+}
+
+article h3{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* CSS Styling for the tables*/
+
+table{
+  table-layout: auto;
+  border-collapse: collapse;
+  padding: 1.0625em;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+th, td{
+  padding: 0.5em;
+  border-bottom: solid 1pt #e9f1f7ff;
+  text-align: left;
+}
+
+td{
+  font-size: 0.8em;
+}
+
+.portfolio td{
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.portfolio td p.italic{
+  font-style: italic;
+}
+
+/* CSS Styling for lists */
+
+ul{
+  list-style: none;
+  margin-left: 0.125em;
+}
+
+ul li{
+  padding: 0.125em;
+}
+
+
+/* CSS Styling for the img tag */
+
+img{
+  align-self: center;
+}
+
+/* Animation for the fade-in effect of the page loading */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* CSS Styling for the download buttons */
+
+.button{ /* Sources used: https://www.w3schools.com/tags/tag_button.asp */
+  border: none;
+  border-radius: 8px;
+  padding: 0.625em 1.875em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ef233cff;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.button:hover{
+  background-color: #2d3047ff;
+  color: #ef233cff;
+}
+
+/* Footer distance from content */
+
+footer{
+  margin-top: 3.75em;
+}

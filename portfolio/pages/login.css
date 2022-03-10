@@ -1,0 +1,126 @@
+/* CSS Styling for main article */
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.75em;
+  width: 80%;
+  background-color: #d1d1d1;
+  padding: 1.5%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+article h1{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+article h2{
+  font-weight: bold;
+}
+
+/* CSS Styling for Form elements and everything within fieldset */
+
+fieldset{
+  display:block;
+  text-align: center;
+  border: 1pt solid #e9f1f7ff;
+  border-radius: 8px;
+}
+
+
+#email{
+  width: 60%;
+  border: 1pt solid #e9f1f7ff;
+  border-radius: 8px;
+  margin-bottom: 1.25em;
+  text-align: left;
+}
+
+#password{
+  width: 60%;
+  border: 1pt solid #e9f1f7ff;
+  border-radius: 8px;
+  margin-bottom: 1.25em;
+}
+
+.info h2{
+  margin-left: 20%;
+  text-align: left;
+}
+
+.register{
+  margin-top: 1.25em;
+  font-size: 1.2em;
+}
+
+/* CSS Styling for hyperlinks */
+
+a{
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+a:hover{
+  color: #e9f1f7ff;
+}
+
+/* CSS Styling for buttons at the bottom of the fieldset */
+
+.button {
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1.25em;
+}
+
+.button button{
+  border: none;
+  border-radius: 8px;
+  padding: 0.9375em 2.1875em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ef233cff;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-size: 1.3em;
+}
+
+.button #submit{
+  margin-right: 1.25em;
+}
+
+.button #clear{
+  margin-left: 1.25em;
+}
+
+.button button:hover{
+  background-color: #2d3047ff;
+  color: #ef233cff;
+}
+
+/* Animation for the fade-in effect of the page loading */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Footer distance from content */
+
+footer{
+  margin-top: 18.75em;
+}

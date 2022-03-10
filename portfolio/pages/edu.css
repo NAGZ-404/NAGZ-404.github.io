@@ -1,0 +1,112 @@
+/* CSS Styling for main article */
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.75em;
+  width: 90%;
+  background-color: #d1d1d1;
+  padding: 1.5%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+article h2{
+  font-weight: bold;
+}
+
+article h3{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* CSS Styling for figure and figcaption*/
+
+figure{
+  display: inline-block;
+}
+
+figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* CSS Styling for the tables*/
+
+table.educationtable{
+  table-layout: auto;
+  border-collapse: collapse;
+  padding: 1.0625em;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+table.educationtable th,  table.educationtable td{
+  padding: 0.5em;
+  border-bottom: solid 1pt #e9f1f7ff;
+  text-align: left;
+}
+
+table.educationtable td{
+  font-size: 0.8em;
+}
+
+#thirdcolumn{
+  text-align: center;
+}
+
+.gradestable{
+  border-left: solid 1pt #e9f1f7ff;
+}
+
+.gradestable table{
+  border-collapse: collapse;
+  padding-left: 1.0625em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradestable table th, .gradestable table td{
+  text-align: center;
+}
+
+.gradestable table td{
+  border: solid 1pt #e9f1f7ff;
+}
+
+/* CSS Styling for lists */
+
+ul{
+  list-style: none;
+  margin-left: 0.125em;
+}
+
+ul li{
+  padding: 0.125em;
+}
+
+/* Animation for the fade-in effect of the page loading */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Footer distance from content */
+
+footer{
+  margin-top: 3.75em;
+}

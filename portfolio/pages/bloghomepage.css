@@ -1,0 +1,291 @@
+/* CSS Styling for main article */
+
+article{
+  float: left;
+  margin: 8.75em 7.5%;
+  /* margin-left: 100px;
+  margin-right: auto;
+  margin-top: 140px; */
+  width: 50%;
+  height: 800px;
+  background-color: #d1d1d1;
+  padding: 1.5%;
+  border-radius: 8px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+article h2{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+article h3{
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+article::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+article {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* CSS Styling for figure and figcaption*/
+
+figure{
+  display: inline-block;
+}
+
+figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* CSS Styling for sections within article*/
+
+section{
+  border: 1pt solid #817f75ff;
+  border-radius: 8px;
+  padding: 1.25em;
+  background-color: #817f75ff;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 3.75em;
+}
+
+section .text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section:hover{
+  background-color: #43423d;
+  color: #e9f1f7ff;
+}
+
+section h3{
+  font-size: 1.3em;
+  text-align: left;
+  margin-top: 0.125em;
+}
+
+.BLANK h2{
+  text-align: center;
+}
+
+/* CSS Styling for the date shown at the top of the blog post */
+
+.date{
+  float:right;
+  margin-top: 0;
+  position: relative;
+  text-align: right;
+
+}
+
+.date p{
+  font-size: 0.9em;
+}
+
+.date i{
+  font-size: 1.2em;
+  vertical-align: sub;
+}
+
+/* CSS Styling for lists */
+
+ul{
+  list-style: none;
+  margin-left: 0.125em;
+}
+
+ul li{
+  padding: 0.125em;
+}
+
+/* CSS Styling for the 'Add Post' Button */
+
+.add{
+  /* float: right; */
+  margin-top: 12.5em;
+}
+
+.postbutton{
+  box-shadow: 5px 10px 18px black;
+  border: none;
+  border-radius: 8px;
+  padding: 1.875em 2.75em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #ef233cff;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-size: 1.5em;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.postbutton:hover{
+  background-color: #2d3047ff;
+  color: #ef233cff;
+}
+
+/* CSS Styling for the list of entries */
+
+.RHS{
+  float: right;
+  margin-right: 90px;
+}
+
+
+.entries{
+  /* float: right; */
+  margin-top: 20px;
+  margin-left: -70px;
+  width: 150%;
+  background-color: #d1d1d1;
+  padding: 9%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  animation: fadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  box-shadow: 5px 10px 18px black;
+}
+
+.entries h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* CSS Styling for 'a' or hyperlinks, list items and the FontAwesome icons. Month is also made bold*/
+
+a{
+  text-decoration: none;
+}
+
+a li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a li:hover{
+  color: #e9f1f7ff;
+}
+
+li i{
+  padding: 0.625em;
+}
+
+.month{
+  font-weight: bold;
+}
+
+ul .nestedlist{
+  margin-left: 1.25em;
+  list-style: none;
+}
+
+/* Animation for the fade-in effect of the page loading */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* CSS Styling for the dropdown menus found within the nav bar */
+
+.dropbtnEX{ /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+
+.dropdownEX:hover .dropbtnEX{ /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  color: #e9f1f7ff;
+}
+
+
+.dropdown-contentEX{  /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  margin-left: 8px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 20%;
+  height: 20%;
+  padding: 1%;
+  display: none;
+  background-color: #d1d1d1;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 5px 10px 18px black;
+
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.dropdown-contentEX::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.dropdown-contentEX {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.dropdown-contentEX a{ /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  border-radius: 8px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-contentEX a:hover{ /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  background-color: #2d3047ff;
+  opacity: 0.9;
+  color: #ef233cff;
+}
+
+.dropdownEX:hover .dropdown-contentEX{ /*Sources used: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar */
+  display: block;
+
+  animation: fadeIn ease 0.2s; /* Sources used: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Footer distance from content */
+
+footer{
+  position: relative;
+  left:0;
+  bottom: 0;
+}
